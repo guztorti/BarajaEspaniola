@@ -1,50 +1,40 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Other/File.java to edit this template
- */
 package barajaespaniola.entities;
 
 import barajaespaniola.enums.Numero;
 import barajaespaniola.enums.Palo;
 
-/**
- *
- * @author gustavotorti
- */
 public class Carta {
 
-     private Palo palo;
-     private Numero numero;
+    private Palo palo;
 
-     public Carta() {
-     }
+    private Numero numero;
 
-     public Carta(Palo palo, Numero numero) {
-          this.palo = palo;
-          this.numero = numero;
-     }
+    public Carta() {
+    }
 
-     public Palo getPalo() {
-          return palo;
-     }
+    public Carta(Palo palo, Numero numero) {
+        this.palo = palo;
+        this.numero = numero;
+    }
 
-     public void setPalo(Palo palo) {
-          this.palo = palo;
-     }
+    public Palo getPalo() {
+        return palo;
+    }
 
-     public Numero getNumero() {
-          return numero;
-     }
+    public void setPalo(Palo palo) {
+        this.palo = palo;
+    }
 
-     public void setNumero(Numero numero) {
-          this.numero = numero;
-     }
+    public Numero getNumero() {
+        return numero;
+    }
 
-     @Override
-     public String toString() {
-          return "Carta{" + "palo=" + palo + ", numero=" + numero.getValor() + '}';
-     }
-     
-     
-             
+    public void setNumero(Numero numero) {
+        this.numero = numero;
+    }
+
+    @Override
+    public String toString() {
+        return "Carta{" + "palo=" + palo + ", numero=" + numero.getValor() + "}\n";
+    }
 }
